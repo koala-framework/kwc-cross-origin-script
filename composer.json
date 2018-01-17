@@ -1,0 +1,18 @@
+{
+    "name": "koala-framework/kwc-cross-origin-script",
+    "description": "Embed Application from Cross Origin by loading a script",
+    "homepage": "http://www.koala-framework.org/",
+    "license": "BSD-2-Clause",
+    "type": "library",
+    "require": {
+        "koala-framework/koala-framework": "~4.2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-0": {
+            "CrossOriginScript_": ""
+        }
+    }
+}
+
