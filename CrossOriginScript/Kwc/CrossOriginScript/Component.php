@@ -15,7 +15,7 @@ class CrossOriginScript_Kwc_CrossOriginScript_Component extends Kwc_Abstract
     public function getTemplateVars(Kwf_Component_Renderer_Abstract $renderer)
     {
         $ret = parent::getTemplateVars($renderer);
-        $ret['id'] = $this->_getRow()->id;
+        $ret['class'] = $this->_getRow()->class;
         $ret['tag'] = $this->_getRow()->tag;
 
         $ret['config'] = array(
