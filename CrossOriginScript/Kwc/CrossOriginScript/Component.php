@@ -11,15 +11,16 @@ class CrossOriginScript_Kwc_CrossOriginScript_Component extends Kwc_Abstract
         $ret['extConfig'] = 'Kwf_Component_Abstract_ExtConfig_Form';
         return $ret;
     }
+
     public function getTemplateVars(Kwf_Component_Renderer_Abstract $renderer)
     {
         $ret = parent::getTemplateVars($renderer);
+        $ret['tag'] = $this->_getRow()->tag;
+
         $ret['config'] = array(
-            'scriptUrl' => $this->_getRow()->script_url,
-            'startFunction' => $this->_getRow()->start_function,
+            'scriptUrl' => $this->_getRow()->script_url
         );
         $ret['rootElementClass'] .= ' '.$this->_getBemClass('--loading');
         return $ret;
-
     }
 }

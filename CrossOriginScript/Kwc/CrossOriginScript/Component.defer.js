@@ -4,8 +4,6 @@ onReady.onRender('.kwcClass', function(el) {
     var config = el.data('config');
     var start = function() {
         el.removeClass('kwcBem--loading');
-        var startFunction = config.startFunction;
-        window[startFunction](el.get(0));
     };
     if (loadedUrls[config.scriptUrl] === true) {
         start();
@@ -29,3 +27,4 @@ onReady.onRender('.kwcClass', function(el) {
         }
     }
 });
+
