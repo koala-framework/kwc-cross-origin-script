@@ -1,4 +1,4 @@
-var onReady = require('kwf/on-ready');
+var onReady = require('kwf/commonjs/on-ready');
 var loadedUrls = {};
 onReady.onRender('.kwcClass', function(el) {
     var config = el.data('config');
