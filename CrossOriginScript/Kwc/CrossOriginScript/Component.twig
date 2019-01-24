@@ -1,3 +1,7 @@
 <div class="{{ rootElementClass }}" data-config="{{ config|json_encode }}">
-    <{{ tag }}></{{ tag }}>
+    <{{ tag }}
+        {% for attribute, value in attributes %}
+            data-{{ attribute }}="{{ value }}"
+        {% endfor %}
+    ></{{ tag }}>
 </div>
